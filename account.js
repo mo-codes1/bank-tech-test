@@ -9,6 +9,12 @@ class Account {
     return this.amount
   }
 
+  addTransaction(action, value) {
+    if(action === 'deposit') {
+      this.amount += value;
+    } 
+  }
+
 }
 const account = new Account();
 
