@@ -12,7 +12,9 @@ class Account {
   addTransaction(action, value) {
     if(action === 'deposit') {
       this.amount += value;
-    } 
+    } else if(action === 'withdrawal') {
+      this.amount -= value;
+    }
   }
 
 }

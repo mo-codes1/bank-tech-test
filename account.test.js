@@ -12,6 +12,9 @@ describe('Bank', () => {
     expect(account.getBalance()).toBe(1000);
   });
 
-  
+  it('withdraws the balance by 500', () => {
+    account.addTransaction('withdrawal', 500);
+    expect(account.getBalance()).toBe(500);
+  });
 
 });
