@@ -5,8 +5,13 @@ This is a mimic of a real tech test and I have used JavaScript to complete with 
 # How to Setup
 
 - clone this repository https://github.com/mo-codes1/bank-tech-test.git
-- run node
-- run account 
+- run ```node```
+- run ```.load index.js```
+- Initialize the program with ```account = new Account()```
+- To deposit into the account: ```account.newTransaction('deposit', randomnumber)```
+- To withdraw from the account: ```account.newTransaction('withdrawal', randomnumber)```
+- To see the statement printed out: ```account.printStatement()```
+- You can now exit node with ```.exit```
 
 
 
