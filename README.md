@@ -1,4 +1,4 @@
-# bank-tech-test
+# Bank-Tech-Test
 
 This is a mimic of a real tech test and I have used JavaScript to complete with Jest as my etsting framework. 
 
@@ -13,6 +13,12 @@ This is a mimic of a real tech test and I have used JavaScript to complete with 
 - To withdraw from the account: ```account.newTransaction('withdrawal', randomnumber)```
 - To see the statement printed out: ```account.printStatement()```
 - You can now exit node with ```.exit```
+
+
+
+https://user-images.githubusercontent.com/75939758/148225024-553e1a62-a206-4724-9d54-79c7fe33f8a0.mov
+
+
 
 
 
