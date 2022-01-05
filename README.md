@@ -5,7 +5,7 @@ This is a mimic of a real tech test and I have used JavaScript to complete this 
 # How to Setup
 
 - clone this repository https://github.com/mo-codes1/bank-tech-test.git
-- run ```cd src```a
+- run ```cd src```
 - run ```node```
 - run ```.load index.js```
 - Initialize the program with ```account = new Account()```
