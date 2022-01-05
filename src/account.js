@@ -1,7 +1,6 @@
 const Transaction = require("./transaction");
 const Statement = require("./statement")
 
-
 class Account {
   constructor(defaultBalance = 0) {
     this.amount = defaultBalance
@@ -9,7 +8,7 @@ class Account {
   }
 
   getBalance() {
-    return this.amount
+    return this.amount.toFixed(2);
   }
 
   getTransactionHistory() {
@@ -19,18 +18,17 @@ class Account {
     new Statement(this.transactionHistory).print()
   }
   
-
   newTransaction(action, value) {
     let transaction = this.newTransactionAction(action, value);
     this.transactionHistory.push(transaction);
-    this._refreshedBalance();
+    this.refreshedBalance();
   }
 
   newTransactionAction(action, value) {
     return new Transaction(this.amount, action, value);
   }
 
-  _refreshedBalance() {
+  refreshedBalance() {
     this.amount = this.getMostRefreshedBalance();
   }
 
@@ -38,5 +36,4 @@ class Account {
     return this.transactionHistory[this.transactionHistory.length - 1].newBalance;
   }
 }
-const account = new Account();
 module.exports = Account;

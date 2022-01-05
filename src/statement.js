@@ -7,13 +7,11 @@ class Statement {
     console.log(
       "date || credit || debit || balance"
     );
-    this.transactionHistory.forEach(transaction => {
+    this.transactionHistory.reverse().forEach(transaction => {
       console.log(
-        `${transaction.date} || ${(transaction.transactionAction == "deposit") ? transaction.transactionValue: ""} || ${(transaction.transactionAction == "withdrawal") ? transaction.transactionValue: ""} || ${transaction.newBalance}`
+        `${transaction.date} || ${(transaction.transactionAction == "deposit") ? transaction.transactionValue.toFixed(2) : ""} || ${(transaction.transactionAction == "withdrawal") ? transaction.transactionValue.toFixed(2) : ""} || ${transaction.newBalance.toFixed(2)}`
       )
     });
    }
-
-
 }
 module.exports = Statement
