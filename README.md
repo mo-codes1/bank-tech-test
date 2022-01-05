@@ -4,4 +4,6 @@ This is a mimic of a real tech test and I have used JavaScript to complete with 
 
 # How to Setup
 
-- clone this repository 
+- clone this repository https://github.com/mo-codes1/bank-tech-test.git
+- run node
+- run account 
