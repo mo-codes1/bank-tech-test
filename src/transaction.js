@@ -3,7 +3,7 @@ class Transaction {
     this.transactionAction = action;
     this.transactionValue = value;
     this.newBalance = this.addTransaction(currentAmount, action, value);
-    this.date = new Date();
+    this.date = new Date().toLocaleString().substring(0,10);;
   }
 
   addTransaction(currentAmount, action, value) {
