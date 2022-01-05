@@ -1,6 +1,6 @@
 # Bank-Tech-Test
 
-This is a mimic of a real tech test and I have used JavaScript to complete with Jest as my etsting framework. 
+This is a mimic of a real tech test and I have used JavaScript to complete this with Jest as my testing framework. 
 
 # How to Setup
 
