@@ -3,21 +3,29 @@ class Account {
   constructor() {
     this.balance = 0
     this.amount = this.balance
+    this.transactionHistory = []
   }
 
   getBalance() {
     return this.amount
   }
 
-  addTransaction(action, value) {
-    if(action === 'deposit') {
-      this.amount += value;
-    } else if(action === 'withdrawal') {
-      this.amount -= value;
-    }
+
+ 
+  printStatement(){
+    console.log (
+      "date || credit || debit || balance"
+    )
+    return this.amount
   }
 
 }
+
+
+
+
+
+
 const account = new Account();
 
 

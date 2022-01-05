@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/mo-codes1/bank-tech-test#readme",
   "dependencies": {
+    "eslint": "^8.6.0",
     "jest": "^27.4.5"
   }
 }
