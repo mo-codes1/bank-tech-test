@@ -18,8 +18,25 @@ This is a mimic of a real tech test and I have used JavaScript to complete this 
 
 https://user-images.githubusercontent.com/75939758/148225024-553e1a62-a206-4724-9d54-79c7fe33f8a0.mov
 
+## User Stories
+```
+As a prospective customer
+So I can have somewhere to put my money
+I would like to open an account
 
+As a customer
+So I can have some money in my account 
+I would like to deposit a set amount
 
+As a customer 
+So I can spend my money 
+I would like to withdraw a set amount
+
+As a customer 
+So I can see my transaction history
+I would like to print out my bank statement
+
+``` 
 
 
 
