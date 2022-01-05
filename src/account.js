@@ -1,4 +1,6 @@
 const Transaction = require("./transaction");
+const Statement = require("./statement")
+
 
 class Account {
   constructor(defaultBalance = 0) {
@@ -13,18 +15,10 @@ class Account {
   getTransactionHistory() {
     return this.transactionHistory;
   }
-
   printStatement() {
-    console.log(
-      "date || credit || debit || balance"
-    );
-    this.transactionHistory.forEach(transaction => {
-      console.log(
-        `${transaction.date} || ${(transaction.transactionAction == "deposit") ? transaction.transactionValue: ""} || ${(transaction.transactionAction == "withdrawal") ? transaction.transactionValue: ""} || ${transaction.newBalance}`
-        
-      )
-    });
+    new Statement(this.transactionHistory).print()
   }
+  
 
   newTransaction(action, value) {
     let transaction = this.newTransactionAction(action, value);
@@ -44,5 +38,5 @@ class Account {
     return this.transactionHistory[this.transactionHistory.length - 1].newBalance;
   }
 }
-
+const account = new Account();
 module.exports = Account;
